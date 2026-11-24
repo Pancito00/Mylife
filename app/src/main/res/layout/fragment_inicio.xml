@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mylife_pink_bg"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <!-- Encabezado -->
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:contentDescription="Mochi, mascota de MyLife"
+            android:src="@drawable/cerdito_sentado"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/tvBienvenida"
+            android:text="¡Bienvenido a MyLife!"
+            android:textColor="@color/mylife_pink_strong"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Organiza tus días y alcanza tus metas"
+            android:textColor="#806D78"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+
+        <!-- Resumen de tareas -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="22dp">
+
+            <TextView
+                android:id="@+id/tvPendientes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:background="@color/mylife_blue"
+                android:gravity="center"
+                android:padding="14dp"
+                android:text="Tareas pendientes: 0"
+                android:textColor="@color/mylife_text"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvHechas"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:background="@color/mylife_mint"
+                android:gravity="center"
+                android:padding="14dp"
+                android:text="Tareas realizadas: 0"
+                android:textColor="@color/mylife_text"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Racha global -->
+        <TextView
+            android:id="@+id/tvRacha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="#FFF0D9"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="🔥 Racha de hábitos: 0 días"
+            android:textColor="#9A6635"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <!-- Calendario -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mi calendario"
+                android:textColor="@color/mylife_pink_strong"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Navegación de meses -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnMesAnterior"
+                    android:layout_width="48dp"
+                    android:layout_height="45dp"
+                    android:backgroundTint="#F8DCE8"
+                    android:text="‹"
+                    android:textColor="#A34F75"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:id="@+id/tvMes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Noviembre 2026"
+                    android:textColor="#66515E"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnMesSiguiente"
+                    android:layout_width="48dp"
+                    android:layout_height="45dp"
+                    android:backgroundTint="#F8DCE8"
+                    android:text="›"
+                    android:textColor="#A34F75"
+                    android:textSize="23sp" />
+
+            </LinearLayout>
+
+            <!-- Días de la semana -->
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="7"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:text="D"
+                    android:textColor="#A34F75"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:text="L"
+                    android:textColor="#A34F75"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:text="M"
+                    android:textColor="#A34F75"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:text="M"
+                    android:textColor="#A34F75"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:text="J"
+                    android:textColor="#A34F75"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:text="V"
+                    android:textColor="#A34F75"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:text="S"
+                    android:textColor="#A34F75"
+                    android:textStyle="bold" />
+
+            </GridLayout>
+
+            <!-- Aquí se dibujan los días desde Java -->
+            <GridLayout
+                android:id="@+id/calendarioDias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="7"
+                android:layout_marginTop="8dp" />
+
+            <!-- Leyenda -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="● Tareas"
+                    android:textColor="#E58AAE"
+                    android:textSize="12sp"
+                    android:layout_marginEnd="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="● Metas"
+                    android:textColor="#A58ACD"
+                    android:textSize="12sp"
+                    android:layout_marginEnd="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="● Hábitos"
+                    android:textColor="#69B77B"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Actividades del día seleccionado -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="20dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvFechaSeleccionada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Actividades del día"
+                android:textColor="@color/mylife_pink_strong"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvActividades"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Selecciona un día del calendario"
+                android:textColor="@color/mylife_text"
+                android:textSize="15sp"
+                android:lineSpacingExtra="6dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mylife_pink_light"
+    android:gravity="center_vertical"
+    android:minHeight="190dp"
+    android:orientation="vertical"
+    android:paddingStart="24dp"
+    android:paddingTop="40dp"
+    android:paddingEnd="24dp"
+    android:paddingBottom="24dp">
+
+    <!-- Mochi, en un círculo -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_nav_usuario"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="12dp"
+        android:contentDescription="Mochi, mascota de MyLife"
+        android:padding="2dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cerdito_feliz"
+        app:shapeAppearanceOverlay="@style/ImagenCircular"
+        app:strokeColor="@color/mylife_pink"
+        app:strokeWidth="2dp" />
+
+    <!-- Nombre (se llena desde Java con el usuario de la sesión) -->
+    <TextView
+        android:id="@+id/txt_nav_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tu nombre"
+        android:textColor="@color/mylife_text"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Correo -->
+    <TextView
+        android:id="@+id/txt_nav_correo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="correo@ejemplo.com"
+        android:textColor="@color/mylife_pink_strong"
+        android:textSize="13sp" />
+
+</LinearLayout>

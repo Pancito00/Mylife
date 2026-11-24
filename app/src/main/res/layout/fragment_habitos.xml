@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mylife_pink_bg">
+
+    <ListView
+        android:id="@+id/listaHabitos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="88dp" />
+
+    <!-- Se muestra solo cuando la lista no tiene elementos -->
+    <LinearLayout
+        android:id="@+id/vacio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="32dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:contentDescription="Mochi, mascota de MyLife"
+            android:scaleType="fitCenter"
+            android:src="@drawable/cerdito_mimido" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Todavía no tienes hábitos.&#10;Toca + y crea el primero 🌱"
+            android:textColor="@color/mylife_text_soft"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAgregarHabito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:contentDescription="Agregar hábito"
+        android:src="@android:drawable/ic_input_add"
+        app:backgroundTint="@color/mylife_pink"
+        app:tint="@color/white" />
+</FrameLayout>

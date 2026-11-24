@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/metas_todas"
+        android:title="Ver todas" />
+    <item
+        android:id="@+id/metas_progreso"
+        android:title="Ver en progreso" />
+    <item
+        android:id="@+id/metas_cumplidas"
+        android:title="Ver cumplidas" />
+    <item
+        android:id="@+id/metas_eliminar_cumplidas"
+        android:title="Eliminar cumplidas" />
+</menu>

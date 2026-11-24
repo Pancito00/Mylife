@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.MyLife" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Colores de marca -->
+        <item name="colorPrimary">@color/mylife_pink_strong</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/mylife_pink_light</item>
+        <item name="colorOnPrimaryContainer">@color/mylife_text</item>
+
+        <item name="colorSecondary">@color/mylife_pink</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryContainer">@color/mylife_peach</item>
+        <item name="colorOnSecondaryContainer">@color/mylife_text</item>
+
+        <!-- Superficies y fondos (Material 3) -->
+        <item name="android:colorBackground">@color/mylife_pink_bg</item>
+        <item name="colorOnBackground">@color/mylife_text</item>
+
+        <item name="colorSurface">@color/mylife_cream</item>
+        <item name="colorOnSurface">@color/mylife_text</item>
+        <item name="colorSurfaceVariant">@color/mylife_pink_light</item>
+        <item name="colorOnSurfaceVariant">@color/mylife_text_soft</item>
+
+        <!-- Contenedores de superficie en Material 3 -->
+        <item name="colorSurfaceContainerLowest">@color/mylife_cream</item>
+        <item name="colorSurfaceContainerLow">@color/mylife_cream</item>
+        <item name="colorSurfaceContainer">@color/mylife_pink_bg</item>
+        <item name="colorSurfaceContainerHigh">@color/mylife_pink_light</item>
+        <item name="colorSurfaceContainerHighest">@color/mylife_pink_light</item>
+
+        <!-- Bordes / divisores -->
+        <item name="colorOutline">@color/mylife_outline</item>
+        <item name="colorOutlineVariant">@color/mylife_pink_light</item>
+
+        <!-- Textos -->
+        <item name="android:textColorPrimary">@color/mylife_text</item>
+        <item name="android:textColorSecondary">@color/mylife_text_soft</item>
+
+        <!-- Barra de estado y navegación -->
+        <item name="android:statusBarColor">@color/mylife_pink_bg</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/mylife_cream</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+
+        <!-- Estilo global del BottomNavigationView -->
+        <item name="bottomNavigationStyle">@style/Widget.MyLife.BottomNavigationView</item>
+    </style>
+
+    <style name="Widget.MyLife.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:background">@color/mylife_cream</item>
+        <item name="itemIconTint">@color/nav_item_color</item>
+        <item name="itemTextColor">@color/nav_item_color</item>
+        <item name="itemRippleColor">@color/mylife_pink_light</item>
+        <item name="itemActiveIndicatorStyle">@style/Widget.MyLife.ActiveIndicator</item>
+    </style>
+
+    <style name="Widget.MyLife.ActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/mylife_pink_light</item>
+    </style>
+
+    <!-- Estilo para imágenes circulares -->
+    <style name="ImagenCircular">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+</resources>

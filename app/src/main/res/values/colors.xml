@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Rosas (sacados del logo) -->
+    <color name="mylife_pink_strong">#C4607F</color>  <!-- "My" -->
+    <color name="mylife_pink">#F08FAE</color>         <!-- "Life" -->
+    <color name="mylife_pink_light">#FBD0E1</color>
+    <color name="mylife_pink_bg">#FFE4EF</color>      <!-- fondo de la app -->
+    <color name="mylife_cream">#FFF8FB</color>        <!-- tarjetas -->
+    <color name="mylife_outline">#8E4A62</color>      <!-- contorno del logo -->
+
+    <!-- Pasteles de acento -->
+    <color name="mylife_yellow">#FFF1A8</color>
+    <color name="mylife_blue">#BDE0F5</color>
+    <color name="mylife_mint">#C8F0DB</color>
+    <color name="mylife_lavender">#DCD0F5</color>
+    <color name="mylife_peach">#FFD8C2</color>
+
+    <!-- Textos -->
+    <color name="mylife_text">#5E3345</color>
+    <color name="mylife_text_soft">#A06A80</color>
+</resources>

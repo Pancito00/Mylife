@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ver_todas"
+        android:title="Ver todas" />
+    <item
+        android:id="@+id/ver_pendientes"
+        android:title="Ver pendientes" />
+    <item
+        android:id="@+id/ver_hechas"
+        android:title="Ver hechas" />
+    <item
+        android:id="@+id/eliminar_hechas"
+        android:title="Eliminar hechas" />
+</menu>
